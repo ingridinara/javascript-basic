@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+
+//5 - crear variable repetir 
+var repetir = "si";
+
+
+// 1- crear la funcion y dentro de la funcion poner lo que tiene que retornar a depender del operador
+function calculadora (operador, valor1, valor2) {
+             if (operador == 'sumar') {
+                return(valor1 + valor2);
+             } 
+
+             else if (operador == 'restar') {
+                return(valor1 - valor2);
+
+             }
+             else if (operador == 'multiplicar') {
+                return(valor1 * valor2);
+             }
+             else {
+                 alert('No has introducido un valor valido');
+             }
+        }
+        
+    
+        
+//6a - que realice los calculos con la funcion escogida "DO"...
+do{
+
+
+// 2 - declarar las variables, los valores que se almacenan de la funcion 
+var operador =prompt("¿Qué operación deseas realizar: sumar, restar o multiplicar?");
+
+var valor1 = parseInt(prompt("Introduce el primer numero"));
+
+var valor2 = parseInt(prompt("Introduce el segun numero"));
+
+
+
+
+// 3- llamar a la funcion = almacenar el valor de la funcion en una variable.
+// Ojo no puedes poner este trozo de codigo encima de de la declaracion de la variable. 
+// la orden es muy importante! 
+var resultado = calculadora(operador, valor1, valor2);
+
+//4- ensenar en pantalla el resultado de la funcion con la variable
+alert('El resultado es' + '  '  + resultado);
+
+
+
+//6b - accion de "Do" y preguntar si quiere repetir cierre
+repetir=prompt("Deseas repetir?");
+}
+
+//7 - ... encuanto repetir sea si
+
+while(repetir =="si");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

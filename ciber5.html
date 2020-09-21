@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<!-- language -->
+<html lang="en">
+  <head>
+    <!-- character encoding -->
+    <meta charset="UTF-8" />
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- author -->
+    <meta name="author" content="Ingrid Inara" />
+    <!-- description -->
+    <meta name="description" content=" Ex. JS Nota Examen by Ingrid Inara" />
+    <!-- keywords -->
+    <meta name="keywords" content="JS APP" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1><script>
+          var nota_examen = prompt("introduce la nota de tu test");
+          var nota_de_corte = 7;
+
+          if(nota_examen >= nota_de_corte) {
+              alert("Ohh has aprobado el examen con"+" " + nota_examen);
+          }
+         else if (nota_examen < nota_de_corte) {
+             alert("Ohh has suspendido el examen con"+" "  + nota_examen);
+         } 
+         else { alert("no has introducido una nota valida");
+             
+         }
+
+      </script></h1>  
+    </header>
+   
+  </body>
+</html>
